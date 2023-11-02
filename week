@@ -1,4 +1,4 @@
-// Define the Student class
+// Define the Student class with its attributes
 class Student {
   String name;
   int age;
