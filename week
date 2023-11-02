@@ -9,8 +9,8 @@ class Student {
 
   // Method to print student information
   void printInfo() {
-    print('Student Name: $name');
-    print('Age: $age');
+    print('Student Name:name');
+    print('Age: age$');
     print('Grade Level: $gradeLevel');
   }
 }
