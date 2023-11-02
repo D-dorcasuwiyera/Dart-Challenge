@@ -1,0 +1,53 @@
+// Define the Student class
+class Student {
+  String name;
+  int age;
+  int gradeLevel;
+
+  // Constructor
+  Student(this.name, this.age, this.gradeLevel);
+
+  // Method to print student information
+  void printInfo() {
+    print('Student Name: $name');
+    print('Age: $age');
+    print('Grade Level: $gradeLevel');
+  }
+}
+
+// Define the Teacher class
+class Teacher {
+  String name;
+  int age;
+  String subject;
+
+  // Constructor
+  Teacher(this.name, this.age, this.subject);
+
+  // Method to print teacher information
+  void printInfo() {
+    print('Teacher Name: $name');
+    print('Age: $age');
+    print('Subject: $subject');
+  }
+}
+
+// Define a class to create and print the information of Student and Teacher
+class School {
+  void createAndPrint() {
+    // Creating student and teacher objects
+    Student student = Student('John Doe', 15, 10);
+    Teacher teacher = Teacher('Jane Smith', 35, 'Mathematics');
+
+    // Calling the methods to print information
+    student.printInfo();
+    print(''); // For better readability
+    teacher.printInfo();
+  }
+}
+
+// Main function to run the program
+void main() {
+  School school = School();
+  school.createAndPrint();
+}
